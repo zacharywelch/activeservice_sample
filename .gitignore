@@ -1,0 +1,11 @@
+/pkg
+Gemfile.lock
+.DS_Store
+bundler_stubs/
+/.bundle
+/service/db/*.sqlite3
+/client/.idea
+/service/log/*.log
+/tmp
+/coverage
+.rspec
