@@ -1554,3 +1554,153 @@ Did you mean?  to_s):
 [aced07a7-b68f-498e-a4a4-6a163184e91c] [::1]   [1m[35mSong Load (0.2ms)[0m  SELECT  "songs".* FROM "songs" LIMIT 2 OFFSET 2
 [aced07a7-b68f-498e-a4a4-6a163184e91c] [::1]   Rendered songs/index.json.jbuilder (1.3ms)
 [aced07a7-b68f-498e-a4a4-6a163184e91c] [::1] Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1] 
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1] 
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1] Started GET "/artists" for ::1 at 2017-05-28 12:28:14 -0400
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1] 
+ActionController::RoutingError (uninitialized constant ApplicationController::NormalizeBoolean):
+  app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/artists_controller.rb:1:in `<top (required)>'
+
+
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+[3d043c97-c060-4db3-81e2-13d1d3bb54d3] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.5ms)
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] 
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] 
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] Started GET "/artists" for ::1 at 2017-05-28 12:28:46 -0400
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] Processing by ArtistsController#index as JSON
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] Unpermitted parameter: format
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1]   [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "artists"
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1]   [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" LIMIT 25 OFFSET 0[0m
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1]   Rendered artists/index.json.jbuilder (9.0ms)
+[32aedea3-19e5-4b68-9a8a-55cabe1c28dc] [::1] Completed 200 OK in 34ms (Views: 14.1ms | ActiveRecord: 3.0ms)
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] 
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] 
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] Started GET "/artists" for ::1 at 2017-05-28 12:29:01 -0400
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] Processing by ArtistsController#index as JSON
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] Unpermitted parameter: format
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "artists"
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1]   [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" LIMIT 25 OFFSET 0[0m
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1]   Rendered artists/index.json.jbuilder (2.8ms)
+[4db734d3-6fbb-4522-959f-f7b6082a65a0] [::1] Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] 
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] 
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] Started GET "/artists" for ::1 at 2017-05-28 12:35:43 -0400
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] Processing by ArtistsController#index as JSON
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] Unpermitted parameter: format
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1]   [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "artists"
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1]   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" LIMIT 25 OFFSET 0[0m
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1]   Rendered artists/index.json.jbuilder (6.2ms)
+[5ba59d99-7094-45e5-94ec-1750c31165a4] [::1] Completed 200 OK in 29ms (Views: 11.0ms | ActiveRecord: 0.8ms)
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] 
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] 
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 12:35:55 -0400
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] Processing by ArtistsController#index as JSON
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1]   Parameters: {"featured"=>"true"}
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] Unpermitted parameter: format
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "artists" WHERE "artists"."featured" = ?  [["featured", "true"]]
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1]   [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."featured" = ? LIMIT 25 OFFSET 0[0m  [["featured", "true"]]
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1]   Rendered artists/index.json.jbuilder (1.0ms)
+[28889a6e-e348-439e-a8e9-d3df18098162] [::1] Completed 200 OK in 30ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] 
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] 
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 13:46:56 -0400
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1]   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] Processing by ArtistsController#index as JSON
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1]   Parameters: {"featured"=>"true"}
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] Unpermitted parameter: format
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "artists" WHERE "artists"."featured" = ?  [["featured", "true"]]
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1]   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."featured" = ? LIMIT 25 OFFSET 0[0m  [["featured", "true"]]
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1]   Rendered artists/index.json.jbuilder (4.1ms)
+[3e41edd5-f9a9-4d8e-a959-4025db5f5a3c] [::1] Completed 200 OK in 29ms (Views: 14.3ms | ActiveRecord: 0.7ms)
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] 
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] 
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] Started GET "/artists" for ::1 at 2017-05-28 13:47:39 -0400
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] Processing by ArtistsController#index as JSON
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] Unpermitted parameter: format
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "artists"
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1]   [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" LIMIT 25 OFFSET 0[0m
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1]   Rendered artists/index.json.jbuilder (5.7ms)
+[324bfb8b-0e80-4cc8-b41f-e5dea63ccbc8] [::1] Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.7ms)
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] 
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] 
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] Started PUT "/artists/1" for ::1 at 2017-05-28 13:47:56 -0400
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] Processing by ArtistsController#update as JSON
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1]   Parameters: {"id"=>"1", "name"=>"Foo", "featured"=>true, "rank"=>5}
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1]   [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 1]]
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] Unpermitted parameters: id, rank, format
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1]   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1]   [1m[35mSQL (0.4ms)[0m  UPDATE "artists" SET "name" = ?, "updated_at" = ? WHERE "artists"."id" = ?  [["name", "Foo"], ["updated_at", "2017-05-28 17:47:56.069427"], ["id", 1]]
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1]   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+[2a275f3b-a102-49bb-9ba1-2442c0b13541] [::1] Completed 204 No Content in 13ms (ActiveRecord: 1.2ms)
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] 
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] 
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] Started PUT "/artists/1" for ::1 at 2017-05-28 13:48:16 -0400
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] Processing by ArtistsController#update as JSON
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1]   Parameters: {"id"=>"1", "name"=>"OMI", "featured"=>true, "rank"=>5}
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1]   [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 1]]
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] Unpermitted parameters: id, rank, format
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1]   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1]   [1m[35mSQL (1.1ms)[0m  UPDATE "artists" SET "name" = ?, "updated_at" = ? WHERE "artists"."id" = ?  [["name", "OMI"], ["updated_at", "2017-05-28 17:48:16.116270"], ["id", 1]]
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1]   [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+[1784a532-b099-4ec3-894a-0fb61fc3eca7] [::1] Completed 204 No Content in 10ms (ActiveRecord: 2.8ms)
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1] 
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1] 
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 13:54:53 -0400
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1]   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1] 
+NoMethodError (undefined method `transform_values' for "featured=true":String):
+  lib/middleware/boolean_parser.rb:24:in `parse_query_parameters'
+  lib/middleware/boolean_parser.rb:12:in `call'
+
+
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+[0e1d1721-c40b-4e0d-9697-c0ac7c199744] [::1]   Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.6ms)
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] 
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] 
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 13:57:11 -0400
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1]   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] Processing by ArtistsController#index as JSON
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1]   Parameters: {"featured"=>"true"}
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] Unpermitted parameter: format
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1]   [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "artists" WHERE "artists"."featured" = ?  [["featured", "true"]]
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1]   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."featured" = ? LIMIT 25 OFFSET 0[0m  [["featured", "true"]]
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1]   Rendered artists/index.json.jbuilder (4.9ms)
+[a2508077-c7c0-4db6-868d-4e7c8820d183] [::1] Completed 200 OK in 28ms (Views: 13.0ms | ActiveRecord: 0.8ms)
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] 
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] 
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] Started GET "/artists" for ::1 at 2017-05-28 14:21:13 -0400
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] Processing by ArtistsController#index as JSON
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] Unpermitted parameter: format
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1]   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "artists"
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1]   [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" LIMIT 25 OFFSET 0[0m
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1]   Rendered artists/index.json.jbuilder (7.3ms)
+[1090bf20-22ef-486d-87b1-b4340833ad01] [::1] Completed 200 OK in 27ms (Views: 11.4ms | ActiveRecord: 1.4ms)
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] 
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] 
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 14:21:22 -0400
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] Processing by ArtistsController#index as JSON
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1]   Parameters: {"featured"=>"true"}
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] Unpermitted parameter: format
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "artists" WHERE "artists"."featured" = ?  [["featured", "true"]]
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1]   [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."featured" = ? LIMIT 25 OFFSET 0[0m  [["featured", "true"]]
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1]   Rendered artists/index.json.jbuilder (0.7ms)
+[8335e1b7-461f-48d7-b1a5-090d5e0a48c9] [::1] Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] 
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] 
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] Started GET "/artists?featured=true" for ::1 at 2017-05-28 14:29:20 -0400
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1]   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] Processing by ArtistsController#index as JSON
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1]   Parameters: {"featured"=>true}
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] Unpermitted parameter: format
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "artists" WHERE "artists"."featured" = 't'
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1]   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."featured" = 't' LIMIT 25 OFFSET 0[0m
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1]   Rendered artists/index.json.jbuilder (7.2ms)
+[fed9de0c-94e1-4707-8817-2616ec8caaa0] [::1] Completed 200 OK in 35ms (Views: 17.7ms | ActiveRecord: 1.0ms)

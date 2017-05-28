@@ -1,6 +1,8 @@
+require 'faraday_middleware'
+
 ActiveService::API.setup :url => "http://localhost:3000" do |c|
   # Request
-  c.use Faraday::Request::UrlEncoded
+  c.request :json
   # Response
   c.use ActiveService::Middleware::DefaultParseJSON
   # Adapter

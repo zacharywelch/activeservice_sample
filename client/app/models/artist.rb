@@ -5,7 +5,7 @@ class Artist < ActiveService::Base
 
   has_many :albums
 
-  scope :featured, -> { where(featured: 't') }
+  scope :featured, -> { where(featured: true) }
 
   custom_get :ranked, :hot, on: :collection
 end
