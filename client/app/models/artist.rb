@@ -1,7 +1,7 @@
 class Artist < ActiveService::Base
   attribute :name
-  attribute :featured, type: Boolean
   attribute :rank
+  attribute :featured, type: Boolean
 
   has_many :albums
 
