@@ -2,6 +2,8 @@ class Song < ActiveService::Base
   attribute :name
   attribute :album_id
   attribute :rank
+  attribute :created_at, type: DateTime
+  attribute :updated_at, type: DateTime
 
   belongs_to :album
 

@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'active_service', git: 'git@github.com:zacharywelch/activeservice.git'
 gem 'faraday_middleware'
+gem 'responders'
 
 group :development, :test do
   gem 'byebug'

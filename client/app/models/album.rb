@@ -3,6 +3,8 @@ class Album < ActiveService::Base
   attribute :artist_id
   attribute :rank
   attribute :released_at, type: DateTime
+  attribute :created_at, type: DateTime
+  attribute :updated_at, type: DateTime
 
   belongs_to :artist
   has_many :songs
